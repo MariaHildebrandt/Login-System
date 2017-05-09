@@ -229,7 +229,30 @@ $ npm install -g less
 ```
 - for beginners [winless.org](http://winless.org/online-less-compiler) shows what is going on behind the scene when your are using LESS. 
 - create an new file style.less in folder stylesheets
+###### Option 1
 - to compile navigate to projectname/public/stylesheets
 ```bash
 $ lessc style.less style.css
+```
+###### Option 2
+- invoke compile from node
+- navigate to folder projectname and install node to dependencies. This will add less to your package.json file
+```bash
+$ npm i less --save-dev
+```
+- require LESS in app.js
+```bash
+var less = require('less');
+var fs = require('fs');
+```
+- setup middleware:
+```bash
+fs.readFile('public/stylesheets/style.less',function(error, data){
+    data = data.toString();
+    less.render(data, function (e, css) {
+        fs.writeFile('public/stylesheets/style.css', css, function(err){
+            console.log('stylesheet compiled');
+        });
+    });
+});
 ```
