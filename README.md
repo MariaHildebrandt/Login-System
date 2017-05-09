@@ -6,7 +6,7 @@
 - [License free Images from Pexels.com](https://nodejs.org/en/) 
 - Database (NoSQL)
 - BCrypt for password encryption
-- form validation with Express-Validation
+- Form Validation with Express-Validation
 - Multer for user image upload
 
 ## Requirements
