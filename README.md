@@ -143,7 +143,7 @@ var db = mongoose.connection;
 ```
 
 #### 5.) Views and Layout
-- in nodeauth/routes/users.js:
+- in folder nodeauth/routes/users.js:
 ```bash
 
 ```
