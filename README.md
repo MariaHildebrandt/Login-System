@@ -3,13 +3,11 @@
 
 ## Includes
 - [Bootstrap](http://getbootstrap.com/) and CSS
-- [Sass](http://sass-lang.com/)
-- [Font Awesome](http://fontawesome.io/)
 - [License free Images from Pexels.com](https://nodejs.org/en/) 
-- [Google Fonts Link](https://fonts.google.com/)
 - Database (NoSQL)
 - BCrypt for password encryption
 - form validation with Express-Validation
+- Multer for user image upload
 
 ## Requirements
 - NodeJS
@@ -41,6 +39,12 @@ npm start
 <p align="left">
   <img src=""  width="">
 </p>
+
+## Work in Progress: ToDo and Bugs
+#### Bugs: 
+- none
+#### ToDo: 
+- Image upload with Multer is working but image display not implemented yet
 
 ## How to Recreate Environment
 #### 1.) Install and Setup MongoDb
