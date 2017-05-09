@@ -148,11 +148,51 @@ var bcrypt = require('bcryptjs');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var db = mongoose.connection;
+(...)
+var app = express();
 ```
 
-#### 5.) Views and Layout
-- in folder nodeauth/routes/users.js:
+#### 5.) Setup Middleware
+##### express-session
 ```bash
-
+app.use(session({
+  secret:'secret',
+  saveUninitialized: true,
+  resave: true
+}));
 ```
+##### passport
+```bash
+app.use(passport.initialize());
+app.use(passport.session());
+```
+
+##### express-validator
+```bash
+app.use(expressValidator({
+  errorFormatter: function(param, msg, value) {
+      var namespace = param.split('.')
+      , root    = namespace.shift()
+      , formParam = root;
+
+    while(namespace.length) {
+      formParam += '[' + namespace.shift() + ']';
+    }
+    return {
+      param : formParam,
+      msg   : msg,
+      value : value
+    };
+  }
+}));
+```
+##### express-messages
+```bash
+app.use(flash());
+app.use(function (req, res, next) {
+  res.locals.messages = require('express-messages')(req, res);
+  next();
+});
+```
+
 
