@@ -20,7 +20,7 @@
 ## Manual Setup
 1. Download mit Git:
 ```bash
-git clone https://github.com/MariaHildebrandt/Login-System-with-Express-and-NodeJS projectname
+git clone https://github.com/MariaHildebrandt/Geometrie-Rechner-mit-Laravel projectname
 ```
 2. navigate to projectname and install with node package manager
 ```bash

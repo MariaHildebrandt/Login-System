@@ -16,12 +16,15 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var db = mongoose.connection;
 
+var less = require('less');
+var fs = require('fs');
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
 
-// view engine setup
+// template view engine setup, here: jade
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
@@ -31,7 +34,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// Handle Sessions
+// Middleware for Sessions
 app.use(session({
   secret:'secret',
   saveUninitialized: true,
@@ -108,5 +111,14 @@ app.use(function(err, req, res, next) {
   });
 });
 
+//middleware for LESS compiler
+fs.readFile('public/stylesheets/style.less', function(error, data){
+    data = data.toString();
+    less.render(data, function (e, output) {
+        fs.writeFile('public/stylesheets/style.css', output.css, function(err){
+            console.log('stylesheet compiled');
+        });
+    });
+});
 
 module.exports = app;
