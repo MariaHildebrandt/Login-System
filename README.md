@@ -2,7 +2,8 @@
 - Users can register and login
 
 ## Includes
-- [Bootstrap](http://getbootstrap.com/) and CSS
+- [Bootstrap](http://getbootstrap.com/) 
+- [LESS](http://lesscss.org/)
 - [License free Images from Pexels.com](https://nodejs.org/en/) 
 - Database (NoSQL, [MongoDB](https://www.mongodb.com/) )
 - [BCrypt](http://nodecode.de/bcrypt) for password encryption
@@ -220,3 +221,15 @@ script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
 script(src='javascripts/bootstrap.js')
 ```
 - in case you are not confident with the [Jade](https://naltatis.github.io/jade-syntax-docs/) Temmplate View, use the [Html2Jade](http://html2jade.org/)-Converter
+
+##### Install LESS
+- install LESS globally
+```bash
+$ npm install -g less
+```
+- for beginners [winless.org](http://winless.org/online-less-compiler) shows what is going on behind the scene when your are using LESS. 
+- create an new file style.less in folder stylesheets
+- to compile navigate to projectname/public/stylesheets
+```bash
+$ lessc style.less style.css
+```
