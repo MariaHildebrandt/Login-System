@@ -3,7 +3,7 @@
 
 ## Includes
 - [Bootstrap](http://getbootstrap.com/) 
-- [LESS](http://lesscss.org/)
+- [LESS](http://lesscss.org/) Script for autocompiling with Node.js below in "How to Recreae Environment" Step 6
 - [License free Images from Pexels.com](https://nodejs.org/en/) 
 - Database (NoSQL, [MongoDB](https://www.mongodb.com/) )
 - [BCrypt](http://nodecode.de/bcrypt) for password encryption
@@ -13,7 +13,7 @@
 - [Jade](https://naltatis.github.io/jade-syntax-docs/) Template View
 
 ## Requirements
-- [NodeJS](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/)
 - [Koala](http://koala-app.com/) Compiler for Sass
 - [MongoDB](https://www.mongodb.com/) (installation manual below in "How to Recreate Environment")
 
@@ -234,8 +234,7 @@ $ npm install -g less
 ```bash
 $ lessc style.less style.css
 ```
-###### Option 2
-- invoke compile from node
+###### Option 2: Autocompile in Node.js
 - navigate to folder projectname and install node to dependencies. This will add less to your package.json file
 ```bash
 $ npm i less --save-dev
@@ -247,10 +246,10 @@ var fs = require('fs');
 ```
 - setup middleware:
 ```bash
-fs.readFile('public/stylesheets/style.less',function(error, data){
+fs.readFile('public/stylesheets/style.less', function(error, data){
     data = data.toString();
-    less.render(data, function (e, css) {
-        fs.writeFile('public/stylesheets/style.css', css, function(err){
+    less.render(data, function (e, output) {
+        fs.writeFile('public/stylesheets/style.css', output.css, function(err){
             console.log('stylesheet compiled');
         });
     });
