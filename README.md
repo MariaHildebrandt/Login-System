@@ -25,6 +25,10 @@ git clone https://github.com/MariaHildebrandt/Login-System-with-Express-and-Node
 ```bash
 npm install
 ```
+3. start your project and open http://localhost:3000 in your browser
+```bash
+npm start
+```
 
 ## Screenshots
 
@@ -38,7 +42,7 @@ npm install
   <img src=""  width="">
 </p>
 
-## How to recreate
+## How to Recreate Environment
 #### 1.) Install and Setup MongoDb
 - download msi file from [homepage](https://www.mongodb.com/)
 - custom installation in C:/mongodb/
