@@ -4,16 +4,16 @@
 ## Includes
 - [Bootstrap](http://getbootstrap.com/) and CSS
 - [License free Images from Pexels.com](https://nodejs.org/en/) 
-- Database (NoSQL, MongoDB)
-- BCrypt for password encryption
+- Database (NoSQL, [MongoDB](https://www.mongodb.com/) )
+- [BCrypt](http://nodecode.de/bcrypt) for password encryption
 - Form Validation with [Express-Validator](https://github.com/ctavan/express-validator)
 - Multer for user image upload
 - [Express-Messages](https://github.com/expressjs/express-messages)
 
 ## Requirements
-- NodeJS
+- [NodeJS](https://nodejs.org/en/)
 - [Koala](http://koala-app.com/) Compiler for Sass
-- MongoDB (installation manual below in "How to Recreate")
+- [MongoDB](https://www.mongodb.com/) (installation manual below in "How to Recreate Environment")
 
 ## Manual Setup
 1. Download mit Git:
@@ -197,5 +197,8 @@ app.use(function (req, res, next) {
   next();
 });
 ```
-
+#### Bcrypt
+- [BCrypt](http://nodecode.de/bcrypt)
+```bash
+```
 
