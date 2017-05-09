@@ -17,6 +17,18 @@
 
 ## Manual Setup
 
+## Screenshots
+
+#### Full View:
+<p>
+  <a href="">Pic</a>,
+</p>
+
+#### Preview:
+<p align="left">
+  <img src=""  width="">
+</p>
+
 ## How to recreate
 #### 1.) Install and Setup MongoDb
 - download msi file from [homepage](https://www.mongodb.com/)
@@ -43,21 +55,16 @@ show collection
 db.users.find().pretty()
 ```
 - shows content of users collection
+##### Some MongoDB commands:
 - change(update) content with:
 ```bash
 db.users.update({username:'Mary'}, {$set:{username:'Maria'}});
 ```
+- delete content with:
+```bash
+db.users.remove({username:'Maria'});
+```
 
 
-### Screenshots
 
-#### Full View:
-<p>
-  <a href="">Pic</a>,
-</p>
-
-#### Preview:
-<p align="left">
-  <img src=""  width="">
-</p>
 
