@@ -210,7 +210,7 @@ app.use(function (req, res, next) {
 ```
 #### 6.) Layout and View
 - download [Bootstrap](http://getbootstrap.com/) and place the file bootstrap.css into folder public/stylesheets
-- put bootstrap.js intp public/javascripts
+- put bootstrap.js in public/javascripts
 - include bootstrap and jquery into your views/layout.jade file:
 ```bash
 //head
