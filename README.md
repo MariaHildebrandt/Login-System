@@ -3,7 +3,7 @@
 
 ## Includes
 - [Bootstrap](http://getbootstrap.com/) 
-- [LESS](http://lesscss.org/) Script for autocompiling with Node.js below in "How to Recreae Environment" Step 6
+- [LESS](http://lesscss.org/) Script for autocompiling with Node.js below in "How to Recreate Environment" Step 6
 - [License free Images from Pexels.com](https://nodejs.org/en/) 
 - Database (NoSQL, [MongoDB](https://www.mongodb.com/) )
 - [BCrypt](http://nodecode.de/bcrypt) for password encryption
