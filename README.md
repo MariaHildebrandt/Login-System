@@ -13,10 +13,11 @@
 ## Requirements
 - NodeJS
 - [Koala](http://koala-app.com/) Compiler for Sass
-- MongoDB (installation manual below)
+- MongoDB (installation manual below in "How to Recreate")
 
-### Manual Setup
+## Manual Setup
 
+## How to recreate
 #### 1.) Install and Setup MongoDb
 - download msi file from [homepage](https://www.mongodb.com/)
 - custom installation in C:/mongodb/
@@ -25,6 +26,28 @@
 - C:\mongodb\bin>mongod --directoryperdb --dbpath C:\mongodb\data\db --logpath C:\mongodb\log\mongodb.log --logappend --rest --install
 - start Service: C:\mongodb\bin>net start MongoDB (should say that the service was started successfully)
 - open shell: C:\mongodb\bin>mongo
+
+#### 2.) Create Database
+- start shell in C:\mongodb\bin>mongo
+```bash
+use nodeauth
+db.createCollection('users');
+show collection
+```
+- insert a new user:
+```bash
+  db.users.insert({name:'Maria Hildebrandt', email:'hildebrandt.maria@googlemail.com', username:'Mary', password:'1234'});
+```
+- password will be encrypted later
+```bash
+db.users.find().pretty()
+```
+- shows content of users collection
+- change(update) content with:
+```bash
+db.users.update({username:'Mary'}, {$set:{username:'Maria'}});
+```
+
 
 ### Screenshots
 
