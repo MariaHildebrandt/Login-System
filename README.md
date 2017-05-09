@@ -4,10 +4,11 @@
 ## Includes
 - [Bootstrap](http://getbootstrap.com/) and CSS
 - [License free Images from Pexels.com](https://nodejs.org/en/) 
-- Database (NoSQL)
+- Database (NoSQL, MongoDB)
 - BCrypt for password encryption
-- Form Validation with Express-Validation
+- Form Validation with [Express-Validator](https://github.com/ctavan/express-validator)
 - Multer for user image upload
+- [Express-Messages](https://github.com/expressjs/express-messages)
 
 ## Requirements
 - NodeJS
@@ -168,6 +169,7 @@ app.use(passport.session());
 ```
 
 ##### express-validator
+- copied from documentation of [Express-Validator](https://github.com/ctavan/express-validator)
 ```bash
 app.use(expressValidator({
   errorFormatter: function(param, msg, value) {
@@ -187,6 +189,7 @@ app.use(expressValidator({
 }));
 ```
 ##### express-messages
+- copied from documentation of [Express Messages](https://github.com/expressjs/express-messages)
 ```bash
 app.use(flash());
 app.use(function (req, res, next) {
