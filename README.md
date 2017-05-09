@@ -7,8 +7,9 @@
 - Database (NoSQL, [MongoDB](https://www.mongodb.com/) )
 - [BCrypt](http://nodecode.de/bcrypt) for password encryption
 - Form Validation with [Express-Validator](https://github.com/ctavan/express-validator)
-- Multer for user image upload
+- [Multer](https://www.npmjs.com/package/multer) for user image upload
 - [Express-Messages](https://github.com/expressjs/express-messages)
+- [Jade](https://naltatis.github.io/jade-syntax-docs/) Template View
 
 ## Requirements
 - [NodeJS](https://nodejs.org/en/)
@@ -149,7 +150,7 @@ var bcrypt = require('bcryptjs');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 var db = mongoose.connection;
-(...)
+//(...)
 var app = express();
 ```
 
@@ -202,3 +203,20 @@ app.use(function (req, res, next) {
 ```bash
 ```
 
+#### Multer Image-Upload
+- from documentation: [Multer](https://www.npmjs.com/package/multer)
+```bash
+```
+#### 6.) Layout and View
+- download [Bootstrap](http://getbootstrap.com/) and place the file bootstrap.css into folder public/stylesheets
+- put bootstrap.js intp public/javascripts
+- include bootstrap and jquery into your views/layout.jade file:
+```bash
+//head
+link(href='/stylesheets/bootstrap.css', rel='stylesheet')
+link(href='/stylesheets/style.css', rel='stylesheet')
+//at the end of body container
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+script(src='javascripts/bootstrap.js')
+```
+- in case you are not confident with the [Jade](https://naltatis.github.io/jade-syntax-docs/) Temmplate View, use the [Html2Jade](http://html2jade.org/)-Converter
