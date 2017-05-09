@@ -142,4 +142,9 @@ var mongoose = require('mongoose');
 var db = mongoose.connection;
 ```
 
+#### 5.) Views and Layout
+- in nodeauth/routes/users.js:
+```bash
+
+```
 
