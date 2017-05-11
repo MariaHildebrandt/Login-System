@@ -1,5 +1,5 @@
 {
-  "name": "nodeauth",
+  "name": "nodelog",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -24,5 +24,8 @@
     "passport-http": "*",
     "passport-local": "*",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "less": "^2.7.2"
   }
 }
