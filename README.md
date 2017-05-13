@@ -15,6 +15,7 @@
 - [Jade](https://naltatis.github.io/jade-syntax-docs/) Template View
 - [Backstretch](https://github.com/jquery-backstretch/jquery-backstretch) responsive showcase image
 - [wow](https://wowjs.uk/) reveal animations
+- heavily adapted version of [Regy Bootstrap Registration Template](http://azmind.com/free-bootstrap-themes-templates/)by AZMIND
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/)
