@@ -1,5 +1,6 @@
 # Login-System with Express and NodeJS
-- Users can register and login
+
+Users can register and login. Screenshots below
 
 ## Includes
 - [Bootstrap](http://getbootstrap.com/) 
@@ -56,6 +57,7 @@ npm start
 #### ToDo: 
 - Image upload with Multer is working but image display not implemented yet
 - Members Area and Errors need CSS/LESS customization
+- showcase picture (iPad) asymetrical to formular ->crop image
 
 ## How to Recreate Environment
 #### 1.) Install and Setup MongoDb
