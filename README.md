@@ -51,13 +51,13 @@ npm start
   <img src="https://s19.postimg.org/llgm494mb/nodeloglogin.png"  width="400px">
 </p>
 
-## Work in Progress: ToDo and Bugs
+## ToDo and Bugs
 #### Bugs: 
-- none
+- no known bugs
 #### ToDo: 
 - Image upload with Multer is working but image display not implemented yet
 - Members Area and Errors need CSS/LESS customization
-- showcase picture (iPad) asymetrical to formular ->crop image
+- Showcase image (iPad) asymetrical to formular ->crop image
 
 ## How to Recreate Environment
 #### 1.) Install and Setup MongoDb
@@ -209,15 +209,7 @@ app.use(function (req, res, next) {
   next();
 });
 ```
-#### Bcrypt
-- [BCrypt](http://nodecode.de/bcrypt)
-```bash
-```
 
-#### Multer Image-Upload
-- from documentation: [Multer](https://www.npmjs.com/package/multer)
-```bash
-```
 #### 6.) Layout and View
 - download [Bootstrap](http://getbootstrap.com/) and place the file bootstrap.css into folder public/stylesheets
 - put bootstrap.js in public/javascripts
