@@ -11,6 +11,7 @@
 - [Multer](https://www.npmjs.com/package/multer) for user image upload
 - [Express-Messages](https://github.com/expressjs/express-messages)
 - [Jade](https://naltatis.github.io/jade-syntax-docs/) Template View
+- [Backstretch](https://github.com/jquery-backstretch/jquery-backstretch) responsive showcase image
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/)
@@ -253,5 +254,17 @@ fs.readFile('public/stylesheets/style.less', function(error, data){
             console.log('stylesheet compiled');
         });
     });
+});
+```
+##### Install Backstretch
+- download JS file from GitHub source and place in directory of your project
+- install viea Bower:
+```bash
+bower install jquery-backstretch
+```
+- Setup in scripts.js. top-content is container class of your showcase:
+```bash
+jQuery(document).ready(function() {
+    $('.top-content').backstretch("/img/backgrounds/1.jpg");
 });
 ```
