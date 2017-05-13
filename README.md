@@ -40,12 +40,14 @@ npm start
 
 #### Full View:
 <p>
-  <a href="">Pic</a>,
+  <a href="https://postimg.org/image/wwj9smbhb/">Register</a>,
+  <a href="https://postimg.org/image/fxabdd09r/">Login</a>
 </p>
 
 #### Preview:
 <p align="left">
-  <img src=""  width="">
+  <img src="https://s19.postimg.org/8g13y5aqr/nodelogreg.png"  width="400px">
+  <img src="https://s19.postimg.org/llgm494mb/nodeloglogin.png"  width="400px">
 </p>
 
 ## Work in Progress: ToDo and Bugs
@@ -53,6 +55,7 @@ npm start
 - none
 #### ToDo: 
 - Image upload with Multer is working but image display not implemented yet
+- Members Area and Errors need CSS/LESS customization
 
 ## How to Recreate Environment
 #### 1.) Install and Setup MongoDb
