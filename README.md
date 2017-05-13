@@ -3,6 +3,8 @@
 
 ## Includes
 - [Bootstrap](http://getbootstrap.com/) 
+- [Font-Awesome](http://fontawesome.io/)
+- [Google Fonts](https://fonts.google.com/)
 - [LESS](http://lesscss.org/) Script for autocompiling with Node.js below in "How to Recreate Environment" Step 6
 - [License free Images from Pexels.com](https://nodejs.org/en/) 
 - Database (NoSQL, [MongoDB](https://www.mongodb.com/) )
@@ -12,6 +14,7 @@
 - [Express-Messages](https://github.com/expressjs/express-messages)
 - [Jade](https://naltatis.github.io/jade-syntax-docs/) Template View
 - [Backstretch](https://github.com/jquery-backstretch/jquery-backstretch) responsive showcase image
+- [wow](https://wowjs.uk/) reveal animations
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/)
