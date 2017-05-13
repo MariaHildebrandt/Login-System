@@ -20,7 +20,6 @@ Users can register and login. Screenshots below
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/)
-- [Koala](http://koala-app.com/) Compiler for Sass
 - [MongoDB](https://www.mongodb.com/) (installation manual below in "How to Recreate Environment")
 
 ## Manual Setup
