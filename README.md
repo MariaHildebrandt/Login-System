@@ -279,3 +279,4 @@ src: url('/font-awesome/fonts/fontawesome-webfont.eot?v=4.6.2');
 src: url('/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.6.2') format('embedded-opentype'), url('/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.2') format('woff2'), url('/font-awesome/fonts/fontawesome-webfont.woff?v=4.6.2') format('woff'), url('/font-awesome/fonts/fontawesome-webfont.ttf?v=4.6.2') format('truetype'), url('/font-awesome/fonts/fontawesome-webfont.svg?v=4.6.2#fontawesomeregular') format('svg');
 ```
 ##### Install WOW
+- follow easy [manual](https://wowjs.uk/docs.html)
